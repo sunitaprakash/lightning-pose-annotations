@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>268573</id>
+      <name>Mouse Annotation 2</name>
+      <size>6</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2022-05-25 04:35:03.827793+01:00</created>
+      <updated>2022-05-25 21:13:38.234873+01:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>5</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>394646</id>
+          <start>0</start>
+          <stop>5</stop>
+          <url>https://cvat.org/?id=394646</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>sunitagrid</username>
+        <email>sunita@grid.ai</email>
+      </owner>
+      <assignee>
+        <username>sunitagrid</username>
+        <email>sunita@grid.ai</email>
+      </assignee>
+      <labels>
+        <label>
+          <name>tail</name>
+          <color>#8459e2</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Nose</name>
+          <color>#4dc8fc</color>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>Left Front paw</name>
+          <color>#34d1b7</color>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2022-05-25 21:30:44.817254+01:00</dumped>
+  </meta>
+  <image id="0" name="img1.png" width="396" height="406">
+    <points label="tail" occluded="0" source="manual" points="53.44,330.78" z_order="0">
+    </points>
+    <points label="Nose" occluded="0" source="manual" points="394.90,19.30" z_order="0">
+    </points>
+    <points label="Left Front paw" occluded="0" source="manual" points="202.49,299.76" z_order="0">
+    </points>
+  </image>
+  <image id="1" name="img2.png" width="396" height="406">
+    <points label="tail" occluded="0" source="manual" points="29.05,312.49" z_order="0">
+    </points>
+    <points label="Left Front paw" occluded="0" source="manual" points="255.61,289.80" z_order="0">
+    </points>
+    <points label="Nose" occluded="0" source="manual" points="393.38,22.34" z_order="0">
+    </points>
+  </image>
+  <image id="2" name="img3.png" width="396" height="406">
+    <points label="Left Front paw" occluded="0" source="manual" points="275.53,291.70" z_order="0">
+    </points>
+    <points label="Nose" occluded="0" source="manual" points="393.89,20.82" z_order="0">
+    </points>
+    <points label="tail" occluded="0" source="manual" points="28.04,114.32" z_order="0">
+    </points>
+  </image>
+  <image id="3" name="img4.png" width="396" height="406">
+    <points label="tail" occluded="0" source="manual" points="35.66,7.61" z_order="0">
+    </points>
+    <points label="Left Front paw" occluded="0" source="manual" points="308.25,294.55" z_order="0">
+    </points>
+    <points label="Nose" occluded="0" source="manual" points="392.88,20.82" z_order="0">
+    </points>
+  </image>
+  <image id="4" name="img5.png" width="396" height="406">
+    <points label="tail" occluded="0" source="manual" points="36.17,7.10" z_order="0">
+    </points>
+    <points label="Left Front paw" occluded="0" source="manual" points="294.03,317.79" z_order="0">
+    </points>
+    <points label="Nose" occluded="0" source="manual" points="393.89,22.34" z_order="0">
+    </points>
+  </image>
+  <image id="5" name="img6.png" width="396" height="406">
+    <points label="Left Front paw" occluded="0" source="manual" points="321.74,307.92" z_order="0">
+    </points>
+    <points label="tail" occluded="0" source="manual" points="45.82,41.15" z_order="0">
+    </points>
+    <points label="Nose" occluded="0" source="manual" points="392.88,21.33" z_order="0">
+    </points>
+  </image>
+</annotations>
