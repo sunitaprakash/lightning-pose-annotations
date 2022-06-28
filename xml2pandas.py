@@ -1,27 +1,17 @@
-from xml.dom import minidom
+import xml.etree.ElementTree as ET
 import pandas as pd
+tree = ET.parse('annotations.xml')
+root = tree.getroot()
 
-p1 = minidom.parse("annotations.xml")
-print(p1)
-df = pd.DataFrame(data)
-tagname= p1.getElementsByTagName('image')
-for x in tagname:
-    tagname= p1.getElementsByTagName('image')
-    #print(x.attributes['name'].value)
-    a=x.attributes['name'].value
-    for y in tagname1:
-        tagname1= p1.getElementsByTagName('points')
-        #print(y.attributes['label'].value)
-        b=y.attributes['label'].value
-        #print(y.attributes['points'].value)
-        c=y.attributes['points'].value
-        print(a, '  ' ,b,'  ',c)
-        data = {'images': [ a ],
-        'label Name': [b],
-        'label point': [c]
-        }
-        df = df.append(data, ignore_index = True)
+dict_attrib = {'image':[], 'tail':[], 'Nose':[], 'Left Front paw':[] }
 
-
-
-print(df)
+#working copy
+for i in root.iter('image'):
+    name = i.attrib['name']
+    dict_attrib['image'].append(name)
+    for child in tree.findall(f"./image[@name='{name}']/"):
+            labelx = child.attrib['label']
+            if (labelx in dict_attrib):
+                points = child.attrib['points']
+                dict_attrib[labelx].append(points.split(','))
+pd.DataFrame.from_dict(dict_attrib)
