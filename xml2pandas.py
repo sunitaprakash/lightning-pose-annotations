@@ -15,4 +15,4 @@ for i in root.iter('image'):
                 points = child.attrib['points']
                 dict_attrib[labelx].append(points.split(','))
 pd.DataFrame.from_dict(dict_attrib)
-df.to_csv('cvtannotation.csv', index=False)
+pd.to_csv('cvtannotation.csv', index=False)
